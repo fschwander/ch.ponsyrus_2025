@@ -1,0 +1,25 @@
+@use '/src/styles/mixins';
+@use '/src/styles/colors';
+
+.layout {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: colors.$clrPrimaryLight;
+}
+
+.nav {
+  display: flex;
+  padding-top: 64px;
+  @include mixins.contentWidth;
+}
+
+.nav a {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include mixins.tabletUp {
+    font-size: 20px;
+  }
+}

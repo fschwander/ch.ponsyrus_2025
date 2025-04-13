@@ -5,7 +5,7 @@ import './Layout.scss'
 const Layout = () => {
   return (
     <div className={'layout'}>
-      <nav>
+      <nav className={'nav'}>
         <Link to={paths.HOME}>Home</Link>
         <Link to={paths.MARKISE}>Markise</Link>
       </nav>

@@ -1,0 +1,16 @@
+@mixin tabletUp {
+  @media (min-width: 720px) {
+    @content;
+  }
+}
+
+@mixin contentWidth {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin contentPadding {
+  padding-right: 24px;
+  padding-left: 24px;
+}

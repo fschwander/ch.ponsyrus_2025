@@ -1,0 +1,6 @@
+@use '/src/styles/mixins';
+
+.home {
+  @include mixins.contentWidth;
+  @include mixins.contentPadding;
+}
