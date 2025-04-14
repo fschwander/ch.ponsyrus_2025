@@ -2,14 +2,16 @@
 @use '/src/styles/colors';
 
 .layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   width: 100vw;
   min-height: 100vh;
-  background-color: colors.$clrPrimaryLight;
+  padding: 64px 0 128px;
 }
 
 .nav {
-  display: flex;
-  padding-top: 64px;
+  width: 100%;
   @include mixins.contentWidth;
 }
 

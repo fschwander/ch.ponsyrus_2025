@@ -1,6 +1,14 @@
 @use '/src/styles/mixins';
+@use '/src/styles/colors';
 
 .home {
   @include mixins.contentWidth;
   @include mixins.contentPadding;
+}
+
+.home__img-house {
+  width: 80%;
+  height: auto;
+  max-width: 400px;
+  stroke: colors.$clrBlack;
 }
