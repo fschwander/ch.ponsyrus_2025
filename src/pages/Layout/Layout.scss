@@ -10,6 +10,10 @@
   padding: 64px 0 128px;
 }
 
+html {
+  background: var(--t-body-bg);
+}
+
 .nav {
   width: 100%;
   @include mixins.contentWidth;
@@ -19,7 +23,6 @@
   padding: 12px 24px;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
 
   @include mixins.tabletUp {
     font-size: 20px;

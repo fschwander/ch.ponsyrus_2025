@@ -2,3 +2,10 @@ $clrPrimary: #715df1;
 $clrPrimaryLight: #d6c1ff;
 $clrSecondary: #fce96e;
 $clrBlack: #212121;
+
+:root {
+  --clr-primary: $clrBlack;
+  --clr-primary-light: $clrPrimaryLight;
+  --clr-secondary: $clrSecondary;
+  --clr-black: $clrBlack;
+}
