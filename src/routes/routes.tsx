@@ -10,7 +10,7 @@ interface Paths {
 
 export const paths: Paths = {
   HOME: '/',
-  MARKISE: 'markise',
+  MARKISE: 'markiseiii',
 }
 
 const routes: RouteObject[] = [
