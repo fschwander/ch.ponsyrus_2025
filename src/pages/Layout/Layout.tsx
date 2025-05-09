@@ -7,6 +7,7 @@ import './Layout.scss'
 const Layout = () => {
   const rootRef = useRef<HTMLDivElement>(null)
 
+  // @ts-expect-error bla
   const [, containerHeight] = useSize(rootRef)
   const [scrollY, setScrollY] = useState(0)
 
@@ -22,19 +23,19 @@ const Layout = () => {
   })
 
   useEffect(() => {
-    const bodyEl = document.getElementsByTagName('html')
+    const htmlEl = document.getElementsByTagName('html')
     const spread = 20
     const pos = 80
-    const bgColor = `radial-gradient(circle at 50%, transparent ${pos - spread * (1 - progress)}%, var(--clr-secondary) ${pos}%)`
-    if (bodyEl[0]) {
-      bodyEl[0].style.setProperty('--t-body-bg', bgColor)
+    const bgColor = `radial-gradient(circle at 50%, transparent ${pos - spread * (1 - progress)}%, var(--clr-primary-light) ${pos}%)`
+    if (htmlEl[0]) {
+      htmlEl[0].style.setProperty('--bg-color', bgColor)
     }
   }, [progress])
 
   return (
     <div className={'layout'} ref={rootRef}>
       <nav className={'nav'}>
-        <Link to={paths.HOME}>home</Link>
+        <Link to={paths.HOME}>ponsyrus</Link>
         <Link to={paths.MARKISE}>markise iii</Link>
       </nav>
 

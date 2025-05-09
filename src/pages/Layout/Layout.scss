@@ -11,7 +11,7 @@
 }
 
 html {
-  background: var(--t-body-bg);
+  background: var(--bg-color);
 }
 
 .nav {
@@ -21,6 +21,7 @@ html {
 
 .nav a {
   padding: 12px 24px;
+  color: colors.$clrPrimaryDark;
   font-size: 18px;
   font-weight: 400;
 
