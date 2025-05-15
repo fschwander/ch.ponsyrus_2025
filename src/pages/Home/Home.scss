@@ -5,6 +5,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 1fr 1fr;
+  margin: 40px 0 0;
   @include mixins.contentWidth;
   @include mixins.contentPadding;
 }
@@ -57,7 +58,7 @@
   width: 90vw;
   height: auto;
   max-width: min(550px, 100%);
-  margin: 15vh 0 24px;
+  margin: 22vh 0 24px;
 
   .button-text {
     opacity: 0;

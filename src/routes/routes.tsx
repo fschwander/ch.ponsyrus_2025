@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouteObject, Navigate } from 'react-router-dom'
 import Home from '../pages/Home/Home.tsx'
 import Layout from '../pages/Layout/Layout.tsx'
+import Markise from '../pages/Markise/Markise'
 import MarkiseAbout from '../pages/Markise/MarkiseAbout'
 import MarkiseEntstehung from '../pages/Markise/MarkiseEntstehung'
 import MarkiseHistorisch from '../pages/Markise/MarkiseHistorisch'
@@ -18,9 +19,9 @@ interface Paths {
 export const paths: Paths = {
   HOME: '/',
   MARKISE: 'markiseiii',
-  ENTSTEHUNG: `entstehungsgeschichte`,
+  ENTSTEHUNG: `entstehung`,
   UMSETZUNG: `umsetzung`,
-  HISTORISCH: `historisches-aussersihl`,
+  HISTORISCH: `vergangenheit`,
   ABOUT: `about-iii`,
 }
 
@@ -35,23 +36,14 @@ const routes: RouteObject[] = [
       },
       {
         path: paths.MARKISE,
-        element: <Navigate to={`${paths.ENTSTEHUNG}`} replace={true} />,
-      },
-      {
-        path: `${paths.MARKISE}/${paths.ENTSTEHUNG}`,
-        element: <MarkiseEntstehung />,
-      },
-      {
-        path: `${paths.MARKISE}/${paths.UMSETZUNG}`,
-        element: <MarkiseUmsetzung />,
-      },
-      {
-        path: `${paths.MARKISE}/${paths.HISTORISCH}`,
-        element: <MarkiseHistorisch />,
-      },
-      {
-        path: `${paths.MARKISE}/${paths.ABOUT}`,
-        element: <MarkiseAbout />,
+        element: <Markise />,
+        children: [
+          { path: paths.ENTSTEHUNG, element: <MarkiseEntstehung /> },
+          { path: paths.UMSETZUNG, element: <MarkiseUmsetzung /> },
+          { path: paths.HISTORISCH, element: <MarkiseHistorisch /> },
+          { path: paths.ABOUT, element: <MarkiseAbout /> },
+          { index: true, element: <Navigate to={paths.ENTSTEHUNG} replace /> }, // Redirect für /markise
+        ],
       },
     ],
   },

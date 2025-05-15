@@ -1,11 +1,14 @@
+import classNames from 'classnames'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import useSize from '@react-hook/size'
 import { paths } from '../../routes/routes.tsx'
 import './Layout.scss'
 
 const Layout = () => {
   const rootRef = useRef<HTMLDivElement>(null)
+
+  const location = useLocation()
 
   // @ts-expect-error bla`
   const [, containerHeight] = useSize(rootRef)
@@ -31,7 +34,7 @@ const Layout = () => {
     const htmlEl = document.getElementsByTagName('html')
     const spread = 20
     const pos = 80
-    const bgColor = `radial-gradient(circle at 50%, transparent ${pos - spread * (1 - progress)}%, var(--clr-primary-light) ${pos}%)`
+    const bgColor = `radial-gradient(circle at 50% 60%, transparent ${pos - spread * progress}%, var(--clr-primary-light) ${pos}%)`
     if (htmlEl[0]) {
       htmlEl[0].style.setProperty('--bg-color', bgColor)
     }
@@ -39,41 +42,67 @@ const Layout = () => {
 
   return (
     <div className={'layout'} ref={rootRef}>
-      <nav className={'nav'}>
-        <Link className='nav__link' to={paths.HOME} onClick={handleLinkClick}>
+      <nav
+        className={classNames('nav', {
+          'nav--hide': location.pathname === paths.HOME,
+        })}
+      >
+        <Link
+          className={classNames('nav__link', {
+            'nav__link--active': location.pathname === paths.HOME,
+          })}
+          to={paths.HOME}
+          onClick={handleLinkClick}
+        >
           ponsyrus
         </Link>
         <div className={'nav__group'}>
           <Link
-            className='nav__link'
+            className={classNames('nav__link', {
+              'nav__link--active': location.pathname === paths.MARKISE,
+            })}
             to={paths.MARKISE}
             onClick={handleLinkClick}
           >
-            Markise iii
+            markise iii
           </Link>
           <Link
-            className='nav__sublink'
+            className={classNames('nav__sublink', {
+              'nav__sublink--active': location.pathname.endsWith(
+                paths.ENTSTEHUNG,
+              ),
+            })}
             to={`${paths.MARKISE}/${paths.ENTSTEHUNG}`}
             onClick={handleLinkClick}
           >
-            entstehungsgeschichte
+            entstehung
           </Link>
           <Link
-            className='nav__sublink'
+            className={classNames('nav__sublink', {
+              'nav__sublink--active': location.pathname.endsWith(
+                paths.UMSETZUNG,
+              ),
+            })}
             to={`${paths.MARKISE}/${paths.UMSETZUNG}`}
             onClick={handleLinkClick}
           >
             umsetzung
           </Link>
           <Link
-            className='nav__sublink'
+            className={classNames('nav__sublink', {
+              'nav__sublink--active': location.pathname.endsWith(
+                paths.HISTORISCH,
+              ),
+            })}
             to={`${paths.MARKISE}/${paths.HISTORISCH}`}
             onClick={handleLinkClick}
           >
-            historisches aussersihl
+            vergangenheit
           </Link>
           <Link
-            className='nav__sublink'
+            className={classNames('nav__sublink', {
+              'nav__sublink--active': location.pathname.endsWith(paths.ABOUT),
+            })}
             to={`${paths.MARKISE}/${paths.ABOUT}`}
             onClick={handleLinkClick}
           >

@@ -82,7 +82,10 @@ a {
   font-weight: 400;
   text-decoration: none;
 
-  &:focus-visible {
-    outline: unset;
+  &,
+  &:active,
+  &:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
   }
 }
