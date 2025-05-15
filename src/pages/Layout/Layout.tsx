@@ -7,7 +7,7 @@ import './Layout.scss'
 const Layout = () => {
   const rootRef = useRef<HTMLDivElement>(null)
 
-  // @ts-expect-error bla
+  // @ts-expect-error bla`
   const [, containerHeight] = useSize(rootRef)
   const [scrollY, setScrollY] = useState(0)
 
@@ -16,11 +16,16 @@ const Layout = () => {
     return prog < 0 ? 0 : prog > 1 ? 1 : prog
   }, [containerHeight, scrollY])
 
+  const handleLinkClick = () => {
+    setScrollY(0)
+    window.scrollTo({ top: 0 })
+  }
+
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  })
+  }, [])
 
   useEffect(() => {
     const htmlEl = document.getElementsByTagName('html')
@@ -35,8 +40,46 @@ const Layout = () => {
   return (
     <div className={'layout'} ref={rootRef}>
       <nav className={'nav'}>
-        <Link to={paths.HOME}>ponsyrus</Link>
-        <Link to={paths.MARKISE}>markise iii</Link>
+        <Link className='nav__link' to={paths.HOME} onClick={handleLinkClick}>
+          ponsyrus
+        </Link>
+        <div className={'nav__group'}>
+          <Link
+            className='nav__link'
+            to={paths.MARKISE}
+            onClick={handleLinkClick}
+          >
+            Markise iii
+          </Link>
+          <Link
+            className='nav__sublink'
+            to={`${paths.MARKISE}/${paths.ENTSTEHUNG}`}
+            onClick={handleLinkClick}
+          >
+            entstehungsgeschichte
+          </Link>
+          <Link
+            className='nav__sublink'
+            to={`${paths.MARKISE}/${paths.UMSETZUNG}`}
+            onClick={handleLinkClick}
+          >
+            umsetzung
+          </Link>
+          <Link
+            className='nav__sublink'
+            to={`${paths.MARKISE}/${paths.HISTORISCH}`}
+            onClick={handleLinkClick}
+          >
+            historisches aussersihl
+          </Link>
+          <Link
+            className='nav__sublink'
+            to={`${paths.MARKISE}/${paths.ABOUT}`}
+            onClick={handleLinkClick}
+          >
+            über iii
+          </Link>
+        </div>
       </nav>
 
       <Outlet />

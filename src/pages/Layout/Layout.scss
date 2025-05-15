@@ -7,6 +7,8 @@
   gap: 24px;
   width: 100vw;
   min-height: 100vh;
+  max-width: 720px;
+  margin: 0 auto;
   padding: 64px 0 128px;
 }
 
@@ -15,11 +17,18 @@ html {
 }
 
 .nav {
+  position: fixed;
+  display: flex;
   width: 100%;
   @include mixins.contentWidth;
 }
 
-.nav a {
+.nav__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link {
   padding: 12px 24px;
   color: colors.$clrPrimaryDark;
   font-size: 18px;
@@ -27,5 +36,17 @@ html {
 
   @include mixins.tabletUp {
     font-size: 20px;
+  }
+}
+
+.nav__sublink {
+  margin-left: 24px;
+  padding: 4px 0 4px 8px;
+  color: colors.$clrPrimaryDark;
+  font-size: 16px;
+  border-left: 2px solid colors.$clrPrimaryDark;
+
+  @include mixins.tabletUp {
+    font-size: 18px;
   }
 }

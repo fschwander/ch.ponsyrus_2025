@@ -6,12 +6,20 @@
 }
 
 html {
+  color: colors.$clrBlack;
   background-color: colors.$clrPrimary;
 }
 
 body {
   margin: 0;
   font-family: Urbanist, sans-serif;
+}
+
+h1,
+h2,
+p {
+  @include mixins.contentWidth;
+  @include mixins.contentPadding;
 }
 
 h1,
@@ -33,14 +41,48 @@ p {
   margin: 12px 0 24px;
   font-size: 18px;
   font-weight: 300;
+  line-height: 1.4;
 
   @include mixins.tabletUp {
     font-size: 20px;
   }
 }
 
+li {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+blockquote {
+  max-width: 640px;
+  margin: 32px auto 0;
+  font-size: 28px;
+  font-weight: 400;
+  @include mixins.contentPadding;
+
+  @include mixins.tabletUp {
+    font-size: 36px;
+  }
+}
+
+cite,
+figcaption {
+  display: inline-block;
+  margin: 8px 0 16px;
+  font-style: unset;
+  font-weight: 400;
+  @include mixins.contentWidth;
+  @include mixins.contentPadding;
+}
+
 a {
   color: colors.$clrSecondary;
   font-weight: 400;
   text-decoration: none;
+
+  &:focus-visible {
+    outline: unset;
+  }
 }

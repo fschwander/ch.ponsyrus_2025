@@ -1,6 +1,4 @@
 @use '/src/styles/mixins';
 
 .markise {
-  @include mixins.contentWidth;
-  @include mixins.contentPadding;
 }

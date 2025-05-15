@@ -1,11 +1,7 @@
 import './Markise.scss'
 
 const Markise = () => {
-  return (
-    <div className={'markise'}>
-      <h1>Markise</h1>
-    </div>
-  )
+  return <div className={'markise'}></div>
 }
 
 export default Markise
