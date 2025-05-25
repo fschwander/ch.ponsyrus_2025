@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppMeasurements } from '../../hooks/useAppMeasurements'
 import { paths } from '../../routes/routes'
-import ImgBlossoms from '/src/assets/images/blossom2.svg?react'
 import ImgHouseDesktop from '/src/assets/images/houseDesktop.svg?react'
 import ImgHouseMobile from '/src/assets/images/houseMobile.svg?react'
 import ImgOrange from '/src/assets/images/orange1.svg?react'
@@ -49,14 +48,13 @@ const Home = () => {
     return () => {
       button?.removeEventListener('click', handleMarkiseClick)
     }
-  }, [navigate])
+  }, [navigate, isMobile])
 
   return (
     <div className={'home'}>
-      <ImgBlossoms className={'img-blossoms'} />
       <ImgTwig className={'img-twig'} />
       <ImgOrange className={'img-orange'} />
-      <ImgOrangeWithLeave className={'img-orange-with-leave'} />
+      {!isMobile && <ImgOrangeWithLeave className={'img-orange-with-leave'} />}
 
       {isMobile ? (
         <ImgHouseMobile ref={houseRef} className={'img-house'} />

@@ -2,7 +2,7 @@ import Figure from '../../components/Figure/Figure'
 
 const MarkiseUmsetzung = () => {
   return (
-    <div className={'markise-umsetzung'}>
+    <div className='markise-umsetzung'>
       <h1>Umsetzung</h1>
       <Figure src='versuch-1.webp' caption='beispiel 1 von hermes' />
       <Figure src='versuch-2.webp' caption='beispiel 2 von hermes' />

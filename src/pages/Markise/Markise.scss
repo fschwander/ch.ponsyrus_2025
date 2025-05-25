@@ -1,5 +1,64 @@
 @use '/src/styles/mixins';
+@use '/src/styles/colors';
 
 .markise {
   margin: 128px 0 0;
+}
+
+.markise__nav-group {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  @include mixins.contentPadding;
+
+  @include mixins.tabletUp {
+    gap: 24px;
+  }
+}
+
+.markise__nav-group-link {
+  position: relative;
+  height: 20vh;
+  // border: colors.$clrBlack 2px solid;
+  box-shadow: 0 0 16px colors.$clrBlackA40;
+
+  a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: colors.$clrSecondary;
+    font-size: 24px;
+    line-height: 20vh;
+    text-align: center;
+
+    @include mixins.tabletUp {
+      font-size: 32px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: colors.$clrPrimary;
+    transition: background-color 0.4s ease;
+    filter: brightness(0.96);
+  }
+
+  &:hover {
+    box-shadow: 0 0 16px colors.$clrBlackA64;
+
+    &::before {
+      filter: brightness(0.94);
+    }
+  }
+}
+
+.markise__nav--hide {
+  display: none;
 }

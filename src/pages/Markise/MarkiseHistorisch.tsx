@@ -2,7 +2,7 @@ import Figure from '../../components/Figure/Figure'
 
 const MarkiseHistorisch = () => {
   return (
-    <div className={'markise-historisch'}>
+    <div className='markise-historisch'>
       <h1>historisches aussersihl</h1>
       <Figure
         src='baeckeranlage.webp'
@@ -28,7 +28,7 @@ const MarkiseHistorisch = () => {
         anwandstrasse = Flurname, Kopfende eines ackers, hier wurde der Pflug
         gewendet. Besonders im Sihlfeld häufige alemannische Flureinteilung.
         Anwände sind meistens rechteckige Gebilde aus Ackern, laufen sie in ein
-        Dreieck aus, bezeichnete man diese als Geeren (Pfeilspitze.). Um eine
+        Dreieck aus, bezeichnete man diese als Geeren (Pfeilspitze). Um eine
         Anwand (Ackerkomplex) herum führten meistens Strassen und Wege.
       </p>
       <Figure
@@ -56,7 +56,7 @@ const MarkiseHistorisch = () => {
         prägten das Image des Gebietes genauso wie die Ansiedlung von
         gewerblichen und industriellen Betrieben während des 18. Jahrhunderts im
         Sihl- und Limmatraum. Die nachhaltigsten Folgen zeitigte wohl der Bau
-        der Eisenbahn: Allein schon die Lage im "Schatten" des Bahnhofs zog eine
+        der Eisenbahn: Allein schon die Lage im «Schatten» des Bahnhofs zog eine
         statusmässige Entwertung der Gegend nach sich und verminderte die
         Attraktivität Aussersihls als potentielles Wohngebiet für finanziell
         besser gestellte Bevölkerungsschichten. 49*
@@ -76,14 +76,14 @@ const MarkiseHistorisch = () => {
         Prozess der Segregation beitrugen.
       </p>
       <p>
-        "Wo das Kleingewerbe und der Arbeiterstand seine Stätte findet, da
+        «Wo das Kleingewerbe und der Arbeiterstand seine Stätte findet, da
         flieht der wohlhabende Kaufmann und Rentier; wo die mächtigen Maschinen
         der modernen Industrie rumoren und die Dampfpfeife schrill ertönt, da
         meidet es die stille Wissenschaft, sich anzusiedeln. (...) Wie der
         Stein, der in's Rollen gekommen ist, mit immer grösseren Sätzen der
         Tiefe zueilt, so wurde auch die Situation von Aussersihl immer
         unhaltbarer, nachdem der oben beschriebene Ausscheidungsprozess einmal
-        begonnen hatte." 50*]…
+        begonnen hatte.» 50*]…
       </p>
       <p>
         48* Vgl. dazu die ausführlicheren Angaben in Bärtschl,
@@ -102,7 +102,7 @@ const MarkiseHistorisch = () => {
       <ul>
         <li>
           bilder, baugeschichtliches archiv, eth e-pics{' '}
-          <a href={'e-pics.ethz.ch/de/baz_ueber/'}>link</a>
+          <a href='e-pics.ethz.ch/de/baz_ueber/'>link</a>
         </li>
         <li>
           texte, quartierverein aussersihl und hard{' '}

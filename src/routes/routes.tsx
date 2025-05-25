@@ -42,7 +42,6 @@ const routes: RouteObject[] = [
           { path: paths.UMSETZUNG, element: <MarkiseUmsetzung /> },
           { path: paths.HISTORISCH, element: <MarkiseHistorisch /> },
           { path: paths.ABOUT, element: <MarkiseAbout /> },
-          { index: true, element: <Navigate to={paths.ENTSTEHUNG} replace /> }, // Redirect für /markise
         ],
       },
     ],

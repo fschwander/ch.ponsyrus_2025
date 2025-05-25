@@ -1,6 +1,8 @@
 @use '/src/styles/mixins';
+@use '/src/styles/colors';
 
 .figure {
+  display: inline-grid;
   margin: unset;
 }
 
@@ -11,4 +13,11 @@
 }
 
 .figure__caption {
+  margin: 0;
+  padding: 4px 24px 24px;
+  background: radial-gradient(
+    farthest-corner at 45% 20%,
+    colors.$clrPrimaryLight 0%,
+    transparent 70%
+  );
 }

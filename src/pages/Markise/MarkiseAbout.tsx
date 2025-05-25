@@ -2,7 +2,7 @@ import Figure from '../../components/Figure/Figure'
 
 const MarkiseAbout = () => {
   return (
-    <div className={'markise-about'}>
+    <div className='markise-about'>
       <h1>über iii</h1>
       <p>
         abstruse ideen die auf biegen und brechen in die praxis umgesetzt werden
@@ -50,7 +50,7 @@ const MarkiseAbout = () => {
         <br />
         <a href='mailto:schneiderhermes@gmail.com'>schneiderhermes@gmail.com</a>
       </p>
-      <Figure src={'collage-iii.webp'} />
+      <Figure src='collage-iii.webp' />
     </div>
   )
 }

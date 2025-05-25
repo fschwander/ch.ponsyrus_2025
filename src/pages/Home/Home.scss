@@ -5,6 +5,9 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  overflow: clip;
+  overflow: hidden;
   margin: 40px 0 0;
   @include mixins.contentWidth;
   @include mixins.contentPadding;
@@ -21,44 +24,37 @@
 
 .img-orange {
   grid-row: 1;
-  grid-column: 1/-1;
-  place-self: start start;
-  width: clamp(80px, 11vw, 140px);
-  height: auto;
-}
-
-.img-twig {
-  grid-row: 1;
-  grid-column: 1/-1;
+  grid-column: 2;
   place-self: start end;
-  width: clamp(180px, 35vw, 360px);
+  width: clamp(80px, 10vmax, 150px);
   height: auto;
+  margin: clamp(40px, 6vmin, 160px) clamp(24px, 4vmin, 80px) 0;
 }
 
 .img-orange-with-leave {
   grid-row: 3;
   grid-column: 1;
-  width: clamp(120px, 16vw, 200px);
+  width: clamp(100px, 12vmax, 200px);
   height: auto;
   margin: 24px 0 0;
 }
 
-.img-blossoms {
+.img-twig {
   grid-row: 3;
-  grid-column: 2;
-  place-self: end end;
-  width: clamp(120px, 24vw, 240px);
+  grid-column: 1/-1;
+  place-self: start end;
+  width: clamp(200px, 35vmax, 300px);
   height: auto;
-  margin: 24px 24px 36px;
 }
 
 .img-house {
-  grid-row: 1/2;
+  z-index: 1;
+  grid-row: 1;
   grid-column: 1/-1;
   width: 90vw;
   height: auto;
   max-width: min(550px, 100%);
-  margin: 22vh 0 24px;
+  margin: clamp(110px, 16vmax, 250px) 0 24px;
 
   .button-text {
     opacity: 0;
@@ -91,8 +87,10 @@
     cursor: pointer;
 
     &:hover {
+      filter: drop-shadow(0 0 4px var(--clr-secondary))
+        drop-shadow(0 0 12px var(--clr-secondary));
+
       .arrow {
-        filter: drop-shadow(0 0 10px var(--clr-secondary));
       }
     }
   }

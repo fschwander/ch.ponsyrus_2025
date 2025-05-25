@@ -81,6 +81,7 @@ a {
   color: colors.$clrSecondary;
   font-weight: 400;
   text-decoration: none;
+  text-shadow: colors.$clrPrimaryDark 0 0 8px;
 
   &,
   &:active,

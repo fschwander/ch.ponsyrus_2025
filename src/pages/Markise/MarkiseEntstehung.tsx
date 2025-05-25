@@ -2,12 +2,8 @@ import Figure from '../../components/Figure/Figure'
 
 const MarkiseEntstehung = () => {
   return (
-    <div className={'markise-entstehung'}>
+    <div className='markise-entstehung'>
       <h1>Entstehungs&shy;geschichte</h1>
-      <p>
-        Erneuerung der Markise an der Anwandstrasse 9 in Zürich – Genossenschaft
-        Ponsyrus, Les Complices*, La Capsula
-      </p>
       <h2>Prolog</h2>
       <p>
         Die Markise ist nicht nur architektonisches Zierstück oder einladendes
@@ -35,18 +31,17 @@ const MarkiseEntstehung = () => {
       </p>
       <p>
         Beim Flanieren durch die Stadt fiel uns auf, dass die herkömmlichen
-        Markisen allmählich von Rolläden oder speziellen Fenstern ersetzt werden
-        und aus dem Stadtbild verschwinden. Unser Blick schweift zurück, hin zum
-        damaligen Lebensmittelladen der sich in den Räumen des heutigen Les
-        Complices*/La Capsula befand und die Anwandstrasse noch von Bäumen
+        Markisen allmählich von Rollläden oder speziellen Fenstern ersetzt
+        werden und aus dem Stadtbild verschwinden. Unser Blick schweift zurück,
+        hin zum damaligen Lebensmittelladen der sich in den Räumen des heutigen
+        Les Complices*/La Capsula befand und die Anwandstrasse noch von Bäumen
         gesäumt war.
       </p>
       <h2>Texte zum Konzept</h2>
-      Hermes:
       <p>
-        Woher kommen die eleganten, dezenten, zum Teil bunten Streifen auf der
-        Markise? Spielt die Ästhetik eine Rolle oder dienen sie einer bestimmten
-        Funktion?
+        <b>Hermes:</b> Woher kommen die eleganten, dezenten, zum Teil bunten
+        Streifen auf der Markise? Spielt die Ästhetik eine Rolle oder dienen sie
+        einer bestimmten Funktion?
       </p>
       <p>
         Aus dieser pragmatischen Fragestellung heraus entstand mein
@@ -59,14 +54,15 @@ const MarkiseEntstehung = () => {
         und erweitern sie unentdeckte Zwischen_räume.
       </p>
       <p>Verbinden sich zu Neuem.</p>
-      AKW: Vogelpunk
+
       <p>
-        Angefangen mit Socken, die mir eine Freundin von ihrer Reise nach Buenos
-        Aires mitgebracht hat, fand ich die Linien, die nun auf der Markise
-        erscheinen. Die Künstlerin Maja Lascano hat die Socken entworfen – ein
-        Muster aus Objekten, die einen nach einer Weile an Vögel erinnern,
-        beinahe figürlich, und doch fast abstrakt, simpel und zugleich
-        verwirrend lustig, ziert sie. Maja Lascano nennt es pájaro punk.
+        <b>AKW (Vogelpunk):</b> Angefangen mit Socken, die mir eine Freundin von
+        ihrer Reise nach Buenos Aires mitgebracht hat, fand ich die Linien, die
+        nun auf der Markise erscheinen. Die Künstlerin Maja Lascano hat die
+        Socken entworfen – ein Muster aus Objekten, die einen nach einer Weile
+        an Vögel erinnern, beinahe figürlich, und doch fast abstrakt, simpel und
+        zugleich verwirrend lustig, ziert sie. Maja Lascano nennt es pájaro
+        punk.
       </p>
       <p>
         Pájaro punk – Vogelpunk, dieses Wort wurde zum Motto für meine
@@ -76,27 +72,25 @@ const MarkiseEntstehung = () => {
         Ein Buch mit zahlreichen farbigen Zeichnungen von Kolibris und
         Paradiesvögeln kam mir in den Sinn und diente als Vorlage. In Anlehnung
         an diese Vögel, ich versuchte unbeschwert Fragmente ihrer Umrisse
-        abzuzeichnen mit einem Pinsel und äusserst wässriger Aquarellfarbe, zT.
-        fast unsichtbar, entstand eine Sammlung an Linien, die mich überraschen
-        und erfreuen sollten und es auch taten. Der nächste Schritt war es,
-        diese Linien durchzupausen, mit Filzstift auszumalen und zu verstärken
-        und dann mit den Streifen von Hermes in Verbindung zu bringen.
+        abzuzeichnen mit einem Pinsel und äusserst wässriger Aquarellfarbe, zum
+        Teil fast unsichtbar, entstand eine Sammlung an Linien, die mich
+        überraschen und erfreuen sollten und es auch taten. Der nächste Schritt
+        war es, diese Linien durchzupausen, mit Filzstift auszumalen und zu
+        verstärken und dann mit den Streifen von Hermes in Verbindung zu
+        bringen.
       </p>
-      <Figure
-        src={'markise-entwurf.webp'}
-        caption={'Entwurf vom 12. April 2022'}
-      />
+      <Figure src='markise-entwurf.webp' caption='Entwurf vom 12. April 2022' />
       <h2>Epilog</h2>
       <p>
         Kurz vor Jahresende 2024 erhielten wir endlich die definitiven Masse des
-        Stoffs für die Markise und mussten feststellen, dass 1/3 unserer
+        Stoffs für die Markise und mussten feststellen, dass ein Drittel unserer
         ursprünglichen Druckvorlage in der Markisenaufrollung versteckt bleiben
-        würde. Wir entschieden deshalb die Druckvorlage anzupassen, dh. sie neu
-        zu berechnen und zu erweitern.
+        würde. Wir entschieden deshalb die Druckvorlage anzupassen, das heisst
+        sie neu zu berechnen und zu erweitern.
       </p>
       <Figure
-        src={'markise-ponsyrus-final.webp'}
-        caption={'Definitive Druckvorlage vom 4. Februar 2025'}
+        src='markise-ponsyrus-final.webp'
+        caption='Definitive Druckvorlage vom 4. Februar 2025'
       />
     </div>
   )
