@@ -7,11 +7,6 @@ import './Layout.scss'
 
 const Layout = () => {
   const rootRef = useRef<HTMLDivElement>(null)
-  // const [menuIsClosed, setMenuIsClosed] = useState(true)
-  //
-  // const toggleMenu = () => {
-  //   setMenuIsClosed((prevState) => !prevState)
-  // }
 
   const location = useLocation()
 
@@ -61,22 +56,34 @@ const Layout = () => {
           'nav--hide': location.pathname === paths.HOME,
         })}
       >
-        <Link className={'nav__link'} to={paths.HOME}>
-          ponsyrus
-        </Link>
-        <div className={'nav__group'}>
+        <div className={'nav__main'}>
+          <Link className={'nav__link'} to={paths.HOME}>
+            ponsyrus
+          </Link>
           <Link
             className={classNames('nav__link', {
-              'nav__link--active': location.pathname.endsWith(paths.MARKISE),
+              'nav__link--active': location.pathname.includes(paths.MARKISE),
+              'nav__link--highlighted': location.pathname.endsWith(
+                paths.MARKISE,
+              ),
             })}
             to={paths.MARKISE}
           >
             markise iii
           </Link>
+        </div>
+
+        <div
+          className={classNames('nav__subgroup', {
+            'nav__subgroup--show': !location.pathname.endsWith(paths.MARKISE),
+          })}
+        >
           <Link
-            className={classNames('nav__sublink', {
-              'nav__sublink--show': !location.pathname.endsWith(paths.MARKISE),
-              'nav__sublink--active': location.pathname.endsWith(
+            className={classNames('nav__subgroup-link', {
+              'nav__subgroup-link--active': location.pathname.includes(
+                paths.ENTSTEHUNG,
+              ),
+              'nav__subgroup-link--highlighted': location.pathname.endsWith(
                 paths.ENTSTEHUNG,
               ),
             })}
@@ -85,9 +92,11 @@ const Layout = () => {
             entstehung
           </Link>
           <Link
-            className={classNames('nav__sublink', {
-              'nav__sublink--show': !location.pathname.endsWith(paths.MARKISE),
-              'nav__sublink--active': location.pathname.endsWith(
+            className={classNames('nav__subgroup-link', {
+              'nav__subgroup-link--active': location.pathname.endsWith(
+                paths.UMSETZUNG,
+              ),
+              'nav__subgroup-link--highlighted': location.pathname.endsWith(
                 paths.UMSETZUNG,
               ),
             })}
@@ -96,9 +105,11 @@ const Layout = () => {
             umsetzung
           </Link>
           <Link
-            className={classNames('nav__sublink', {
-              'nav__sublink--show': !location.pathname.endsWith(paths.MARKISE),
-              'nav__sublink--active': location.pathname.endsWith(
+            className={classNames('nav__subgroup-link', {
+              'nav__subgroup-link--active': location.pathname.endsWith(
+                paths.HISTORISCH,
+              ),
+              'nav__subgroup-link--highlighted': location.pathname.endsWith(
                 paths.HISTORISCH,
               ),
             })}
@@ -107,18 +118,19 @@ const Layout = () => {
             vergangenheit
           </Link>
           <Link
-            className={classNames('nav__sublink', {
-              'nav__sublink--show': !location.pathname.endsWith(paths.MARKISE),
-              'nav__sublink--active': location.pathname.endsWith(paths.ABOUT),
+            className={classNames('nav__subgroup-link', {
+              'nav__subgroup-link--active': location.pathname.endsWith(
+                paths.ABOUT,
+              ),
+              'nav__subgroup-link--highlighted': location.pathname.endsWith(
+                paths.ABOUT,
+              ),
             })}
             to={`${paths.MARKISE}/${paths.ABOUT}`}
           >
             über iii
           </Link>
         </div>
-        {/*<div className={'nav__menu'}>*/}
-        {/*  <HamburgerMenu isClosed={menuIsClosed} toggleClosed={toggleMenu} />*/}
-        {/*</div>*/}
       </nav>
 
       <Outlet />

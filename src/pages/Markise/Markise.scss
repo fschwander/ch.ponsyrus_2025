@@ -2,7 +2,7 @@
 @use '/src/styles/colors';
 
 .markise {
-  margin: 128px 0 0;
+  margin: 64px 0 48px;
 }
 
 .markise__nav-group {
@@ -23,8 +23,7 @@
 .markise__nav-group-link {
   position: relative;
   height: 20vh;
-  // border: colors.$clrBlack 2px solid;
-  box-shadow: 0 0 16px colors.$clrBlackA40;
+  box-shadow: 0 0 16px colors.$clrPrimaryDarkA90;
 
   a {
     position: relative;
@@ -51,7 +50,7 @@
   }
 
   &:hover {
-    box-shadow: 0 0 16px colors.$clrBlackA64;
+    box-shadow: 0 0 16px colors.$clrPrimaryDarkAbb;
 
     &::before {
       filter: brightness(0.94);
