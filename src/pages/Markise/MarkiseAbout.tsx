@@ -3,18 +3,30 @@ import Figure from '../../components/Figure/Figure'
 const MarkiseAbout = () => {
   return (
     <div className='markise-about'>
-      <h1>über iii</h1>
+      <h1>about iii</h1>
       <p>
         abstruse ideen die auf biegen und brechen in die praxis umgesetzt werden
-        dominieren das werk von iii. ..uns verlockt die komplexität des
-        arbeitsprozesses bis hin zur entstehung eines settings, das inmitten
-        gesellschaftlicher strukturen und umstände einen raum schafft für
-        unvorhersehbare begegnungen im freien Fall und für überraschende
-        winkelkombinationen der wahrnehmung bzw. der selbst_wahrnehmung. aus der
-        tradition der DIY kultur kommend beschäftigen uns die themen: –
-        partizipation – der sinn und die unsinnigkeit sowie das vergnügen an der
-        sprache – die wege und umwege der lust und des genusses
+        dominieren das werk von iii.
       </p>
+      <p>
+        uns verlockt die komplexität des arbeitsprozesses bis hin zur entstehung
+        eines settings, das inmitten gesellschaftlicher strukturen und umstände
+        einen raum schafft für unvorhersehbare begegnungen im freien Fall und
+        für überraschende winkelkombinationen der wahrnehmung bzw. der
+        selbst_wahrnehmung. aus der tradition der DIY kultur kommend
+        beschäftigen uns die themen:
+      </p>
+      <ul>
+        <li>partizipation</li>
+        <li>
+          der sinn und die unsinnigkeit sowie das vergnügen an der sprache
+        </li>
+        <li>die wege und umwege der lust und des genusses</li>
+      </ul>
+      <p>
+        iii = interest in intest, sind anne käthi wehrli und hermes schneider
+      </p>
+
       <h2>auswahl arbeiten</h2>
       <ul>
         <li>
@@ -41,10 +53,8 @@ const MarkiseAbout = () => {
           bern
         </li>
       </ul>
-      <p>
-        iii = interest in intest, sind anne käthi wehrli und hermes schneider
-      </p>
-      <h2>Kontakt</h2>
+
+      <h2>kontakt</h2>
       <p>
         <a href='mailto:akwehrli@bluewin.ch'>akwehrli@bluewin.ch</a>
         <br />

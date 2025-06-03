@@ -1,8 +1,8 @@
 import Figure from '../../components/Figure/Figure'
 
-const MarkiseHistorisch = () => {
+const MarkiseHistorisches = () => {
   return (
-    <div className='markise-historisch'>
+    <div className='markise-historisches'>
       <h1>historisches aussersihl</h1>
       <Figure
         src='baeckeranlage.webp'
@@ -35,31 +35,44 @@ const MarkiseHistorisch = () => {
         src='hydrantenplan-1880.webp'
         caption='hydrantenplan der feuerwehr, aussersihl, ca. 1880'
       />
+      <h2>auszug aus «wohnen im arbeiterquartier»</h2>
       <blockquote>
-        «Wo noch vor wenig Jahren Auf weitem Ackerfeld Ergötzten gold’ne Saaten
-        Von Landmanns Hand bestellt, … Da drängen sich jetzt Menschen In Häusern
-        ohne Zahl, Von allen Ländern kommend; Wir haben nicht die Wahl».
+        «Wo noch vor wenig Jahren
+        <br />
+        Auf weitem Ackerfeld
+        <br />
+        Ergötzten gold’ne Saaten
+        <br />
+        Von Landmanns Hand bestellt, …
+        <br />
+        Da drängen sich jetzt Menschen
+        <br />
+        In Häusern ohne Zahl,
+        <br />
+        Von allen Ländern kommend;
+        <br />
+        Wir haben nicht die Wahl».
       </blockquote>
-      <cite>johann hasler, lokaldichter und landwirt</cite>
+      <cite>johann hasler (1846-1902), lokaldichter und landwirt</cite>
       <p>
-        ...[Es verdient festgehalten zu werden, dass der angesprochene Konsens
-        der Öffentlichkeit bezüglich der Entwicklung Aussersihls zum
+        Es verdient festgehalten zu werden, dass der angesprochene Konsens der
+        Öffentlichkeit bezüglich der Entwicklung Aussersihls zum
         Unterschichtenquartier nur die Fortsetzung einer langen Tradition
         bildete, nämlich der Konzentration von negativ prägenden Merkmalen auf
-        dem Gebiet dieser Gemeinde. 48* Seit dem 12. Jahrhundert bis gegen Ende
-        des 17. Jahrhunderts wurden im Siechenhaus St. Jakob vor der Sihlbrücke
-        die Aussätzigen der Stadt Zürich untergebracht. In der Hard stand der
-        Galgen und später das Hochgericht. Nicht seltene Naturkatastrophen wie
-        Überschwemmungen und Eisgänge der Sihl hatten für die Gegend ebenso
-        verheerende Konsequenzen wie der alte Zürichkrieg und die
-        österreichisch-russischen Auseinandersetzungen während der Helvetik und
-        prägten das Image des Gebietes genauso wie die Ansiedlung von
+        dem Gebiet dieser Gemeinde.<sup>1</sup> Seit dem 12. Jahrhundert bis
+        gegen Ende des 17. Jahrhunderts wurden im Siechenhaus St. Jakob vor der
+        Sihlbrücke die Aussätzigen der Stadt Zürich untergebracht. In der Hard
+        stand der Galgen und später das Hochgericht. Nicht seltene
+        Naturkatastrophen wie Überschwemmungen und Eisgänge der Sihl hatten für
+        die Gegend ebenso verheerende Konsequenzen wie der alte Zürichkrieg und
+        die österreichisch-russischen Auseinandersetzungen während der Helvetik
+        und prägten das Image des Gebietes genauso wie die Ansiedlung von
         gewerblichen und industriellen Betrieben während des 18. Jahrhunderts im
         Sihl- und Limmatraum. Die nachhaltigsten Folgen zeitigte wohl der Bau
         der Eisenbahn: Allein schon die Lage im «Schatten» des Bahnhofs zog eine
         statusmässige Entwertung der Gegend nach sich und verminderte die
         Attraktivität Aussersihls als potentielles Wohngebiet für finanziell
-        besser gestellte Bevölkerungsschichten. 49*
+        besser gestellte Bevölkerungsschichten.<sup>2</sup>
       </p>
       <p>
         Verschiedenste Mosaiksteinchen vervollkommneten das Bild. Eine Vielzahl
@@ -75,29 +88,31 @@ const MarkiseHistorisch = () => {
         Faktoren der Stigmatisierung das ihrige zum sich selberverstärkenden
         Prozess der Segregation beitrugen.
       </p>
-      <p>
+      <blockquote>
         «Wo das Kleingewerbe und der Arbeiterstand seine Stätte findet, da
         flieht der wohlhabende Kaufmann und Rentier; wo die mächtigen Maschinen
         der modernen Industrie rumoren und die Dampfpfeife schrill ertönt, da
-        meidet es die stille Wissenschaft, sich anzusiedeln. (...) Wie der
+        meidet es die stille Wissenschaft, sich anzusiedeln. [...] Wie der
         Stein, der in's Rollen gekommen ist, mit immer grösseren Sätzen der
         Tiefe zueilt, so wurde auch die Situation von Aussersihl immer
         unhaltbarer, nachdem der oben beschriebene Ausscheidungsprozess einmal
-        begonnen hatte.» 50*]…
-      </p>
+        begonnen hatte.»<sup>3</sup>
+      </blockquote>
       <p>
-        48* Vgl. dazu die ausführlicheren Angaben in Bärtschl,
+        <sup>1</sup> Vgl. dazu die ausführlicheren Angaben in Bärtschl,
         Industrialisierung, speziell S. 419ff. und in Kreis, Segregation,
         S.37-51,
       </p>
       <p>
-        49* Das 'Bahnhofsviertel' als wenig geschätztes Quartier findet sich in
-        vielen anderen Städten (vgl. Mumford, Stadt, S. 536ff.). Ähnlich
+        <sup>2</sup> Das «Bahnhofsviertel» als wenig geschätztes Quartier findet
+        sich in vielen anderen Städten (vgl. Mumford, Stadt, S. 536ff.). Ähnlich
         gruppieren sich in Hamburg die Unterschichtenquartiere um den Hafen
         (vgl. Wischermann, Wohnen, S. 390ff.
       </p>
-      <p>50* Petition der Gemeinde Aussersihl, S. 6, 8.</p>
-      <p>S. 85-96.</p>
+      <p>
+        <sup>3</sup> Petition der Gemeinde Aussersihl, S. 6, 8.
+      </p>
+
       <h2>quellenangaben</h2>
       <ul>
         <li>
@@ -112,11 +127,11 @@ const MarkiseHistorisch = () => {
         </li>
         <li>
           wohnen im arbeiterquartier, auszug lizenziatsarbeit von daniel künzle,
-          1985
+          1985, S. 85-96.
         </li>
       </ul>
     </div>
   )
 }
 
-export default MarkiseHistorisch
+export default MarkiseHistorisches

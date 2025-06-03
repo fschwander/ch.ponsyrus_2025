@@ -1,16 +1,16 @@
 import Figure from '../../components/Figure/Figure'
 
-const MarkiseEntstehung = () => {
+const MarkiseKonzept = () => {
   return (
-    <div className='markise-entstehung'>
-      <h1>Entstehungs&shy;geschichte</h1>
+    <div className='markise-konzept'>
+      <h1>Konzept</h1>
       <h2>Prolog</h2>
       <p>
         Die Markise ist nicht nur architektonisches Zierstück oder einladendes
         Lockmittel für das Verweilen vor der Auslage oder ein Schutz für die
         Auslage von der Sonne oder ein Schutz vor störenden Blicken – sie
-        spendet, wenn die Sonne durch den Stoff dringt, eine besondere Art von
-        Atmosphäre.
+        Atmosphäre. spendet, wenn die Sonne durch den Stoff dringt, eine
+        besondere Art von
       </p>
       <p>
         Ausgehend von einem historischen, nostalgischen Blick beschlossen wir,
@@ -18,9 +18,8 @@ const MarkiseEntstehung = () => {
         zum grössten Teil Sumpfgebiet.
       </p>
       <p>
-        Die ersten Häuser an der Anwandstrasse wurden um die Jahrhundertwende
-        des 20. Jahrhunderts gebaut. Vorher waren dort Felder, sowie ein
-        Ackerpflugwendeplatz.
+        Die ersten Häuser an der Anwandstrasse wurden Ende des 19. Jahrhunderts
+        gebaut. Vorher waren dort Felder, sowie ein Ackerpflugwendeplatz.
       </p>
       <p>
         Im Baugeschichtlichen Archiv in der Ausstellung «Backsteinstadt Zürich»,
@@ -34,7 +33,7 @@ const MarkiseEntstehung = () => {
         Markisen allmählich von Rollläden oder speziellen Fenstern ersetzt
         werden und aus dem Stadtbild verschwinden. Unser Blick schweift zurück,
         hin zum damaligen Lebensmittelladen der sich in den Räumen des heutigen
-        Les Complices*/La Capsula befand und die Anwandstrasse noch von Bäumen
+        Les Complices*/La Capsula befand als die Anwandstrasse noch von Bäumen
         gesäumt war.
       </p>
       <h2>Texte zum Konzept</h2>
@@ -56,13 +55,12 @@ const MarkiseEntstehung = () => {
       <p>Verbinden sich zu Neuem.</p>
 
       <p>
-        <b>AKW (Vogelpunk):</b> Angefangen mit Socken, die mir eine Freundin von
-        ihrer Reise nach Buenos Aires mitgebracht hat, fand ich die Linien, die
-        nun auf der Markise erscheinen. Die Künstlerin Maja Lascano hat die
-        Socken entworfen – ein Muster aus Objekten, die einen nach einer Weile
-        an Vögel erinnern, beinahe figürlich, und doch fast abstrakt, simpel und
-        zugleich verwirrend lustig, ziert sie. Maja Lascano nennt es pájaro
-        punk.
+        <b>AKW:</b> Angefangen mit Socken, die mir eine Freundin von ihrer Reise
+        nach Buenos Aires mitgebracht hat, fand ich die Linien, die nun auf der
+        Markise erscheinen. Die Künstlerin Maja Lascano hat die Socken entworfen
+        – ein Muster aus Objekten, die einen nach einer Weile an Vögel erinnern,
+        beinahe figürlich, und doch fast abstrakt, simpel und zugleich
+        verwirrend lustig, ziert sie. Maja Lascano nennt es pájaro punk.
       </p>
       <p>
         Pájaro punk – Vogelpunk, dieses Wort wurde zum Motto für meine
@@ -85,7 +83,7 @@ const MarkiseEntstehung = () => {
         Kurz vor Jahresende 2024 erhielten wir endlich die definitiven Masse des
         Stoffs für die Markise und mussten feststellen, dass ein Drittel unserer
         ursprünglichen Druckvorlage in der Markisenaufrollung versteckt bleiben
-        würde. Wir entschieden deshalb die Druckvorlage anzupassen, das heisst
+        würde. Wir entschieden deshalb, die Druckvorlage anzupassen, das heisst
         sie neu zu berechnen und zu erweitern.
       </p>
       <Figure
@@ -96,4 +94,4 @@ const MarkiseEntstehung = () => {
   )
 }
 
-export default MarkiseEntstehung
+export default MarkiseKonzept

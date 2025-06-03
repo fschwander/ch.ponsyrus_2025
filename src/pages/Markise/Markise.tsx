@@ -14,7 +14,8 @@ const Markise = () => {
         })}
       >
         <div className='markise__nav-header'>
-          <h1>Markise iii</h1>
+          <h1>markise</h1>
+          <h2>kunst am bau</h2>
           <p>
             Erneuerung der Markise an der Anwandstrasse 9 in Zürich von iii
             zusammen mit der Genossenschaft Ponsyrus und Les Complices*/La
@@ -23,13 +24,13 @@ const Markise = () => {
         </div>
         <div className='markise__nav-group'>
           <div className='markise__nav-group-link'>
-            <Link to={paths.ENTSTEHUNG}>entstehung</Link>
+            <Link to={paths.KONZEPT}>konzept</Link>
           </div>
           <div className='markise__nav-group-link'>
-            <Link to={paths.UMSETZUNG}>umsetzung</Link>
+            <Link to={paths.MAKING_OF}>making of</Link>
           </div>
           <div className='markise__nav-group-link'>
-            <Link to={paths.HISTORISCH}>historisch</Link>
+            <Link to={paths.HISTORISCHES}>historisches</Link>
           </div>
           <div className='markise__nav-group-link'>
             <Link to={paths.ABOUT}>about iii</Link>

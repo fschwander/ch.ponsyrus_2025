@@ -1,27 +1,27 @@
-import { createBrowserRouter, RouteObject, Navigate } from 'react-router-dom'
+import { createBrowserRouter, RouteObject } from 'react-router-dom'
 import Home from '../pages/Home/Home.tsx'
 import Layout from '../pages/Layout/Layout.tsx'
 import Markise from '../pages/Markise/Markise'
 import MarkiseAbout from '../pages/Markise/MarkiseAbout'
-import MarkiseEntstehung from '../pages/Markise/MarkiseEntstehung'
-import MarkiseHistorisch from '../pages/Markise/MarkiseHistorisch'
-import MarkiseUmsetzung from '../pages/Markise/MarkiseUmsetzung'
+import MarkiseHistorisches from '../pages/Markise/MarkiseHistorisches'
+import MarkiseKonzept from '../pages/Markise/MarkiseKonzept'
+import MarkiseMakingOf from '../pages/Markise/MarkiseMakingOf'
 
 interface Paths {
   HOME: string
   MARKISE: string
-  ENTSTEHUNG: string
-  UMSETZUNG: string
-  HISTORISCH: string
+  KONZEPT: string
+  MAKING_OF: string
+  HISTORISCHES: string
   ABOUT: string
 }
 
 export const paths: Paths = {
   HOME: '/',
   MARKISE: 'markiseiii',
-  ENTSTEHUNG: `entstehung`,
-  UMSETZUNG: `umsetzung`,
-  HISTORISCH: `vergangenheit`,
+  KONZEPT: `konzept`,
+  MAKING_OF: `making-of`,
+  HISTORISCHES: `historisches`,
   ABOUT: `about-iii`,
 }
 
@@ -38,9 +38,9 @@ const routes: RouteObject[] = [
         path: paths.MARKISE,
         element: <Markise />,
         children: [
-          { path: paths.ENTSTEHUNG, element: <MarkiseEntstehung /> },
-          { path: paths.UMSETZUNG, element: <MarkiseUmsetzung /> },
-          { path: paths.HISTORISCH, element: <MarkiseHistorisch /> },
+          { path: paths.KONZEPT, element: <MarkiseKonzept /> },
+          { path: paths.MAKING_OF, element: <MarkiseMakingOf /> },
+          { path: paths.HISTORISCHES, element: <MarkiseHistorisches /> },
           { path: paths.ABOUT, element: <MarkiseAbout /> },
         ],
       },

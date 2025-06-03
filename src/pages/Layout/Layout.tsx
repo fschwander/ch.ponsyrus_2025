@@ -81,41 +81,41 @@ const Layout = () => {
           <Link
             className={classNames('nav__subgroup-link', {
               'nav__subgroup-link--active': location.pathname.includes(
-                paths.ENTSTEHUNG,
+                paths.KONZEPT,
               ),
               'nav__subgroup-link--highlighted': location.pathname.endsWith(
-                paths.ENTSTEHUNG,
+                paths.KONZEPT,
               ),
             })}
-            to={`${paths.MARKISE}/${paths.ENTSTEHUNG}`}
+            to={`${paths.MARKISE}/${paths.KONZEPT}`}
           >
-            entstehung
+            konzept
           </Link>
           <Link
             className={classNames('nav__subgroup-link', {
               'nav__subgroup-link--active': location.pathname.endsWith(
-                paths.UMSETZUNG,
+                paths.MAKING_OF,
               ),
               'nav__subgroup-link--highlighted': location.pathname.endsWith(
-                paths.UMSETZUNG,
+                paths.MAKING_OF,
               ),
             })}
-            to={`${paths.MARKISE}/${paths.UMSETZUNG}`}
+            to={`${paths.MARKISE}/${paths.MAKING_OF}`}
           >
-            umsetzung
+            making of
           </Link>
           <Link
             className={classNames('nav__subgroup-link', {
               'nav__subgroup-link--active': location.pathname.endsWith(
-                paths.HISTORISCH,
+                paths.HISTORISCHES,
               ),
               'nav__subgroup-link--highlighted': location.pathname.endsWith(
-                paths.HISTORISCH,
+                paths.HISTORISCHES,
               ),
             })}
-            to={`${paths.MARKISE}/${paths.HISTORISCH}`}
+            to={`${paths.MARKISE}/${paths.HISTORISCHES}`}
           >
-            vergangenheit
+            historisches
           </Link>
           <Link
             className={classNames('nav__subgroup-link', {
@@ -128,7 +128,7 @@ const Layout = () => {
             })}
             to={`${paths.MARKISE}/${paths.ABOUT}`}
           >
-            über iii
+            about iii
           </Link>
         </div>
       </nav>
