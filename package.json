@@ -8,7 +8,9 @@
     "build": "tsc --build tsconfig.app.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "eslint . --fix"
+    "format": "eslint . --fix",
+    "deploy:test": "DEPLOY_ENV=test node ./src/scripts/deploy.js",
+    "deploy:prod": "DEPLOY_ENV=prod node ./src/scripts/deploy.js"
   },
   "dependencies": {
     "@eslint/js": "^9.21.0",
@@ -17,7 +19,9 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+    "basic-ftp": "^5.0.5",
     "classnames": "^2.5.1",
+    "dotenv": "^16.5.0",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-react": "^7.37.4",
@@ -29,6 +33,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
     "sass": "^1.86.0",
+    "ssh2-sftp-client": "^12.0.0",
     "stylelint": "^16.18.0",
     "stylelint-config-standard": "^38.0.0",
     "stylelint-config-standard-scss": "^14.0.0",
