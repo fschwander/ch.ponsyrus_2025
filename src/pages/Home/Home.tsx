@@ -50,6 +50,8 @@ const Home = () => {
     }
   }, [navigate, isMobile])
 
+  console.log(isMobile)
+
   return (
     <div className={'home'}>
       <ImgTwig className={'img-twig'} />

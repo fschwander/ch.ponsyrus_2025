@@ -2,11 +2,13 @@ import classNames from 'classnames'
 import { CSSProperties, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import useSize from '@react-hook/size'
+import { useAppMeasurements } from '../../hooks/useAppMeasurements'
 import { paths } from '../../routes/routes.tsx'
 import './Layout.scss'
 
 const Layout = () => {
   const rootRef = useRef<HTMLDivElement>(null)
+  const { isMobile } = useAppMeasurements()
 
   const location = useLocation()
 
@@ -27,13 +29,17 @@ const Layout = () => {
 
   useEffect(() => {
     const htmlEl = document.getElementsByTagName('html')
-    const spread = 20
-    const pos = 80
-    const bgColor = `radial-gradient(circle at 50% 60%, transparent ${pos - spread * progress}%, var(--clr-primary-light) ${pos}%)`
+
+    const sizes = isMobile
+      ? { type: 'ellipse', width: 200, height: 62, pos: 70, spread: 10 }
+      : { type: 'circle', width: 100, height: 100, pos: 75, spread: 5 }
+    const bgColor = `radial-gradient(${isMobile ? sizes.type + ' ' + sizes.width + '% ' + sizes.height + '%' : sizes.type}  at 50% 60%, transparent ${sizes.pos - sizes.spread * progress}%, var(--clr-primary-light) ${sizes.pos}%)`
+    // const bgColor = `radial-gradient(farthest-side at 50% 60%, transparent ${pos - spread * progress}%, var(--clr-primary-light) ${pos}%)`
+
     if (htmlEl[0]) {
       htmlEl[0].style.setProperty('--bg-color', bgColor)
     }
-  }, [progress])
+  }, [isMobile, progress])
 
   useEffect(() => {
     setScrollY(0)

@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 1fr 1fr;
-  max-width: 520px;
+  max-width: 600px;
   margin: 40px auto 0;
 }
 
@@ -33,9 +33,13 @@
   z-index: 1;
   grid-row: 3;
   grid-column: 1;
-  width: clamp(100px, 9vmax, 130px);
+  width: 130px;
   height: auto;
   margin: 24px 24px 0;
+
+  @include mixins.tabletUp {
+    margin: 0;
+  }
 }
 
 .img-twig {
@@ -43,18 +47,21 @@
   grid-row: 3;
   grid-column: 1/-1;
   place-self: start end;
-  width: clamp(200px, 35vmax, 300px);
+  width: clamp(200px, 34vmax, 300px);
   height: auto;
   margin: 0 24px 0 0;
+
+  @include mixins.tabletUp {
+    margin: 0;
+  }
 }
 
 .img-house {
   z-index: 1;
   grid-row: 1;
   grid-column: 1/-1;
-  width: 100vw;
+  width: 100%;
   height: auto;
-  max-width: min(550px, 100%);
   margin: clamp(70px, 6vmax, 140px) 0 24px;
 
   .button-text {
@@ -88,8 +95,8 @@
     cursor: pointer;
 
     &:hover {
-      filter: drop-shadow(0 0 4px var(--clr-secondary))
-        drop-shadow(0 0 12px var(--clr-secondary));
+      filter: drop-shadow(0 0 4px var(--clr-highlight))
+        drop-shadow(0 0 12px var(--clr-highlight));
 
       .arrow {
       }

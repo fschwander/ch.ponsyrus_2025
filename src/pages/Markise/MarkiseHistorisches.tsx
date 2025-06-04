@@ -10,7 +10,7 @@ const MarkiseHistorisches = () => {
       />
       <Figure
         src='baeckeranlage-1900.webp'
-        caption='bäckeranlage, 1906-1907 (ruef-hirz friedrich)'
+        caption='bäckeranlage, 1906-1907 (friedrich ruef-hirz)'
       />
       <Figure
         src='badenerstrasse-roesslitram.webp'
@@ -18,12 +18,9 @@ const MarkiseHistorisches = () => {
       />
       <Figure
         src='helvetiaplatz-1917.webp'
-        caption='abgabe verbilligter kartoffeln durch das lebensmittelamt, helvetiaplatz, 1917 (schucht eduard robert)'
+        caption='abgabe verbilligter kartoffeln durch das lebensmittelamt, helvetiaplatz, 1917 (eduard robert schucht)'
       />
-      <Figure
-        src='plan-aussersihl-1871.webp'
-        caption='plan aussersihl 1, 1871'
-      />
+      <Figure src='plan-aussersihl-1871.webp' caption='plan aussersihl, 1871' />
       <p>
         anwandstrasse = Flurname, Kopfende eines ackers, hier wurde der Pflug
         gewendet. Besonders im Sihlfeld häufige alemannische Flureinteilung.
@@ -59,20 +56,27 @@ const MarkiseHistorisches = () => {
         Öffentlichkeit bezüglich der Entwicklung Aussersihls zum
         Unterschichtenquartier nur die Fortsetzung einer langen Tradition
         bildete, nämlich der Konzentration von negativ prägenden Merkmalen auf
-        dem Gebiet dieser Gemeinde.<sup>1</sup> Seit dem 12. Jahrhundert bis
-        gegen Ende des 17. Jahrhunderts wurden im Siechenhaus St. Jakob vor der
-        Sihlbrücke die Aussätzigen der Stadt Zürich untergebracht. In der Hard
-        stand der Galgen und später das Hochgericht. Nicht seltene
-        Naturkatastrophen wie Überschwemmungen und Eisgänge der Sihl hatten für
-        die Gegend ebenso verheerende Konsequenzen wie der alte Zürichkrieg und
-        die österreichisch-russischen Auseinandersetzungen während der Helvetik
-        und prägten das Image des Gebietes genauso wie die Ansiedlung von
-        gewerblichen und industriellen Betrieben während des 18. Jahrhunderts im
-        Sihl- und Limmatraum. Die nachhaltigsten Folgen zeitigte wohl der Bau
-        der Eisenbahn: Allein schon die Lage im «Schatten» des Bahnhofs zog eine
-        statusmässige Entwertung der Gegend nach sich und verminderte die
-        Attraktivität Aussersihls als potentielles Wohngebiet für finanziell
-        besser gestellte Bevölkerungsschichten.<sup>2</sup>
+        dem Gebiet dieser Gemeinde.
+        <sup>
+          <a href='#fn1'>[1]</a>
+        </sup>{' '}
+        Seit dem 12. Jahrhundert bis gegen Ende des 17. Jahrhunderts wurden im
+        Siechenhaus St. Jakob vor der Sihlbrücke die Aussätzigen der Stadt
+        Zürich untergebracht. In der Hard stand der Galgen und später das
+        Hochgericht. Nicht seltene Naturkatastrophen wie Überschwemmungen und
+        Eisgänge der Sihl hatten für die Gegend ebenso verheerende Konsequenzen
+        wie der alte Zürichkrieg und die österreichisch-russischen
+        Auseinandersetzungen während der Helvetik und prägten das Image des
+        Gebietes genauso wie die Ansiedlung von gewerblichen und industriellen
+        Betrieben während des 18. Jahrhunderts im Sihl- und Limmatraum. Die
+        nachhaltigsten Folgen zeitigte wohl der Bau der Eisenbahn: Allein schon
+        die Lage im «Schatten» des Bahnhofs zog eine statusmässige Entwertung
+        der Gegend nach sich und verminderte die Attraktivität Aussersihls als
+        potentielles Wohngebiet für finanziell besser gestellte
+        Bevölkerungsschichten.
+        <sup>
+          <a href={'#fn2'}>[2]</a>
+        </sup>
       </p>
       <p>
         Verschiedenste Mosaiksteinchen vervollkommneten das Bild. Eine Vielzahl
@@ -96,38 +100,41 @@ const MarkiseHistorisches = () => {
         Stein, der in's Rollen gekommen ist, mit immer grösseren Sätzen der
         Tiefe zueilt, so wurde auch die Situation von Aussersihl immer
         unhaltbarer, nachdem der oben beschriebene Ausscheidungsprozess einmal
-        begonnen hatte.»<sup>3</sup>
+        begonnen hatte.»
+        <sup>
+          <a href={'#fn3'}>[3]</a>
+        </sup>
       </blockquote>
-      <p>
-        <sup>1</sup> Vgl. dazu die ausführlicheren Angaben in Bärtschl,
-        Industrialisierung, speziell S. 419ff. und in Kreis, Segregation,
-        S.37-51,
-      </p>
-      <p>
-        <sup>2</sup> Das «Bahnhofsviertel» als wenig geschätztes Quartier findet
-        sich in vielen anderen Städten (vgl. Mumford, Stadt, S. 536ff.). Ähnlich
+      <aside role='doc-endnote' id={'fn1'}>
+        [1] Vgl. dazu die ausführlicheren Angaben in Bärtschl,
+        Industrialisierung, speziell S. 419ff. und in Kreis, Segregation, S.
+        37-51.
+      </aside>
+      <aside role='doc-endnote' id={'fn2'}>
+        [2] Das «Bahnhofsviertel» als wenig geschätztes Quartier findet sich in
+        vielen anderen Städten (vgl. Mumford, Stadt, S. 536ff.). Ähnlich
         gruppieren sich in Hamburg die Unterschichtenquartiere um den Hafen
         (vgl. Wischermann, Wohnen, S. 390ff.
-      </p>
-      <p>
-        <sup>3</sup> Petition der Gemeinde Aussersihl, S. 6, 8.
-      </p>
+      </aside>
+      <aside role='doc-endnote' id={'fn3'}>
+        [3] Petition der Gemeinde Aussersihl, S. 6, 8.
+      </aside>
 
       <h2>quellenangaben</h2>
       <ul>
         <li>
-          bilder, baugeschichtliches archiv, eth e-pics{' '}
+          bilder, baugeschichtliches archiv, eth e-pics.{' '}
           <a href='e-pics.ethz.ch/de/baz_ueber/'>link</a>
         </li>
         <li>
-          texte, quartierverein aussersihl und hard{' '}
+          texte, quartierverein aussersihl und hard.{' '}
           <a href='8004.ch/kreis-4-informationen/bauen-wohnen/strassen-flurnamen-alte-bezeichnungen/'>
             link
           </a>
         </li>
         <li>
-          wohnen im arbeiterquartier, auszug lizenziatsarbeit von daniel künzle,
-          1985, S. 85-96.
+          wohnen im arbeiterquartier, lizenziatsarbeit von daniel künzle, 1985,
+          S. 85-96.
         </li>
       </ul>
     </div>

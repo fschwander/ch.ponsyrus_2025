@@ -7,10 +7,9 @@ const MarkiseKonzept = () => {
       <h2>Prolog</h2>
       <p>
         Die Markise ist nicht nur architektonisches Zierstück oder einladendes
-        Lockmittel für das Verweilen vor der Auslage oder ein Schutz für die
-        Auslage von der Sonne oder ein Schutz vor störenden Blicken – sie
-        Atmosphäre. spendet, wenn die Sonne durch den Stoff dringt, eine
-        besondere Art von
+        Lockmittel zum Verweilen vor der Auslage oder ein Schutz für die Auslage
+        von der Sonne oder ein Schutz vor störenden Blicken – sie spendet, wenn
+        die Sonne durch den Stoff dringt, eine besondere Art von Atmosphäre.
       </p>
       <p>
         Ausgehend von einem historischen, nostalgischen Blick beschlossen wir,

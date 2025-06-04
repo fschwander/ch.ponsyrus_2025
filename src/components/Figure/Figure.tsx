@@ -11,9 +11,7 @@ const Figure = ({ src, caption }: FigureProps) => {
   return (
     <figure className={'figure'}>
       <img className={'figure__image'} src={url} alt={''} loading={'lazy'} />
-      {caption && (
-        <figcaption className={'figure__caption'}>{caption}</figcaption>
-      )}
+      {caption && <figcaption>{caption}</figcaption>}
     </figure>
   )
 }

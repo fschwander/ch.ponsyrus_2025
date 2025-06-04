@@ -9,19 +9,10 @@
   min-height: 100vh;
   max-width: 720px;
   margin: 0 auto;
-  padding: 64px 0 128px;
-}
+  padding: 40px 0 64px;
 
-html {
-  &::before {
-    pointer-events: none;
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: var(--bg-color);
+  @include mixins.tabletUp {
+    padding: 64px 0 128px;
   }
 }
 
@@ -46,7 +37,13 @@ html {
   opacity: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 16px;
+
+  @include mixins.tabletUp {
+    justify-content: start;
+    gap: 20px;
+  }
 }
 
 .nav__link,
@@ -83,7 +80,7 @@ html {
 
 .nav__subgroup-link {
   margin: 0;
-  padding: 4px 8px;
+  padding: 4px;
   font-size: 18px;
 
   @include mixins.tabletUp {

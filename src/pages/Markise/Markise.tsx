@@ -14,8 +14,7 @@ const Markise = () => {
         })}
       >
         <div className='markise__nav-header'>
-          <h1>markise</h1>
-          <h2>kunst am bau</h2>
+          <h1>markise – kunst am bau</h1>
           <p>
             Erneuerung der Markise an der Anwandstrasse 9 in Zürich von iii
             zusammen mit der Genossenschaft Ponsyrus und Les Complices*/La

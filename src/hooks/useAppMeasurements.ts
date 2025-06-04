@@ -19,7 +19,7 @@ export const useAppMeasurements = (): UseAppMeasurements => {
 
     window.addEventListener('resize', updateMeasurements)
 
-    return window.removeEventListener('resize', updateMeasurements)
+    return () => window.removeEventListener('resize', updateMeasurements)
   }, [])
 
   return measurements
