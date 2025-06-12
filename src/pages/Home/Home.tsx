@@ -50,12 +50,11 @@ const Home = () => {
     }
   }, [navigate, isMobile])
 
-  console.log(isMobile)
-
   return (
     <div className={'home'}>
       <ImgTwig className={'img-twig'} />
       <ImgOrange className={'img-orange'} />
+
       {!isMobile && <ImgOrangeWithLeave className={'img-orange-with-leave'} />}
 
       {isMobile ? (

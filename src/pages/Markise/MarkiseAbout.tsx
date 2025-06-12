@@ -44,7 +44,10 @@ const MarkiseAbout = () => {
         </li>
         <li>
           drop in – tausend dimensionen, tausend expressionen, tausend
-          emotionen, im rahmen der G&nbsp;R&nbsp;O&nbsp;U&nbsp;N&nbsp;D
+          emotionen, im rahmen der{' '}
+          <span style={{ textTransform: 'uppercase' }}>
+            G&nbsp;R&nbsp;O&nbsp;U&nbsp;N&nbsp;D
+          </span>{' '}
           residency, 2021, les complices*, zürich
         </li>
         <li>

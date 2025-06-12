@@ -23,10 +23,17 @@
   grid-row: 1;
   grid-column: 2;
   place-self: start end;
-  width: clamp(100px, 10vmax, 140px);
+  width: clamp(80px, 10vmax, 120px);
   height: auto;
   overflow: visible;
   margin: 0 24px 0 0;
+  transform: translate(
+    calc(var(--progress) * -3vw),
+    calc(var(--progress) * 5vh)
+  );
+  filter: drop-shadow(0 0 2px colors.$clrSecondaryDark)
+    drop-shadow(0 0 8px colors.$clrSecondary)
+    drop-shadow(0 0 24px colors.$clrSecondary);
 }
 
 .img-orange-with-leave {
@@ -47,7 +54,7 @@
   grid-row: 3;
   grid-column: 1/-1;
   place-self: start end;
-  width: clamp(200px, 34vmax, 300px);
+  width: clamp(200px, 28vmax, 300px);
   height: auto;
   margin: 0 24px 0 0;
 

@@ -2,7 +2,11 @@
 @use '/src/styles/colors';
 
 .figure {
-  margin: 0;
+  margin: 32px 0 24px;
+
+  @include mixins.tabletUp {
+    margin: 40px 0 32px;
+  }
 }
 
 .figure__image {

@@ -19,17 +19,22 @@
 .nav {
   opacity: 1;
   position: fixed;
-  top: 24px;
+  top: 0;
+  left: 0;
   width: 100%;
   text-shadow:
     colors.$clrPrimaryLight 0 0 4px,
     colors.$clrPrimaryLight 0 0 16px,
     colors.$clrPrimaryLight 0 0 32px;
-  @include mixins.contentWidth;
+
+  @include mixins.tabletUp {
+    padding: 0 0 36px;
+  }
 }
 
 .nav__main {
   display: flex;
+  @include mixins.contentWidth;
 }
 
 .nav__subgroup {
@@ -38,7 +43,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 16px;
+  padding: 0 20px;
+
+  @include mixins.contentWidth;
 
   @include mixins.tabletUp {
     justify-content: start;
@@ -103,8 +110,8 @@
 .nav__subgroup-link--active {
   color: colors.$clrSecondary;
   text-shadow:
-    colors.$clrPrimaryDark 0 0 4px,
-    colors.$clrPrimaryDark 0 0 12px;
+    colors.$clrPrimaryDarkA90 0 0 8px,
+    colors.$clrPrimaryDarkA90 0 0 16px;
 }
 
 .nav__link--highlighted,

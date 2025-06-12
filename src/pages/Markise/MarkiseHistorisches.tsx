@@ -4,6 +4,25 @@ const MarkiseHistorisches = () => {
   return (
     <div className='markise-historisches'>
       <h1>historisches aussersihl</h1>
+      <p>
+        Unsere Recherche zur Markise führte uns ins historische Aussersihl, zu
+        den Ursprüngen der Anwandstrasse. Was wir gerne gefunden hätten auf
+        unserer Suche, wäre ein Bild der Felder gewesen, die existierten, dort
+        wo später, Ende des 19. Jahrhunderts, die Anwandstrasse gebaut wurde.
+        Ebenso hätten wir gerne Fotografien gesehen von Werkstätten des
+        Kleingewerbes, das sich später dort angesiedelt hat, z. B. Färbereien,
+        Sattlereien oder Spenglereien. Was für Menschen arbeiteten dort, wie
+        waren die Räume eingerichtet? Leider fanden wir auch keine Bilder von
+        der Anwandstrasse 9, in der, wie wir gehört haben, zeitweise ein
+        Gemischtwarenladen, Milchladen oder Coiffeursalon zu finden war. Wir
+        versuchten uns dem damaligen Lokalkolorit anzunähern.
+      </p>
+      <p>
+        Die folgenden Fotos zeigen die unmittelbare Nachbarschaft der
+        Anwandstrasse, z. B. die Bäckeranlage, ein neu angelegter Park. Auf dem
+        Quartierplan von 1871 und dem Hydrantenplan von ca. 1880 ist die
+        Anwandstrasse nocht nicht eingezeichnet.
+      </p>
       <Figure
         src='baeckeranlage.webp'
         caption='bäckeranlage, das neue schulhaus an der kernstrasse, 1905 (fotograf_in: unbekannt)'
@@ -92,7 +111,7 @@ const MarkiseHistorisches = () => {
         Faktoren der Stigmatisierung das ihrige zum sich selberverstärkenden
         Prozess der Segregation beitrugen.
       </p>
-      <blockquote>
+      <p>
         «Wo das Kleingewerbe und der Arbeiterstand seine Stätte findet, da
         flieht der wohlhabende Kaufmann und Rentier; wo die mächtigen Maschinen
         der modernen Industrie rumoren und die Dampfpfeife schrill ertönt, da
@@ -104,20 +123,20 @@ const MarkiseHistorisches = () => {
         <sup>
           <a href={'#fn3'}>[3]</a>
         </sup>
-      </blockquote>
+      </p>
       <aside role='doc-endnote' id={'fn1'}>
-        [1] Vgl. dazu die ausführlicheren Angaben in Bärtschl,
+        <a>[1]</a> Vgl. dazu die ausführlicheren Angaben in Bärtschl,
         Industrialisierung, speziell S. 419ff. und in Kreis, Segregation, S.
         37-51.
       </aside>
       <aside role='doc-endnote' id={'fn2'}>
-        [2] Das «Bahnhofsviertel» als wenig geschätztes Quartier findet sich in
-        vielen anderen Städten (vgl. Mumford, Stadt, S. 536ff.). Ähnlich
+        <a>[2]</a> Das «Bahnhofsviertel» als wenig geschätztes Quartier findet
+        sich in vielen anderen Städten (vgl. Mumford, Stadt, S. 536ff.). Ähnlich
         gruppieren sich in Hamburg die Unterschichtenquartiere um den Hafen
         (vgl. Wischermann, Wohnen, S. 390ff.
       </aside>
       <aside role='doc-endnote' id={'fn3'}>
-        [3] Petition der Gemeinde Aussersihl, S. 6, 8.
+        <a>[3]</a> Petition der Gemeinde Aussersihl, S. 6, 8.
       </aside>
 
       <h2>quellenangaben</h2>
