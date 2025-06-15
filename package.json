@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "format": "eslint . --fix",
     "deploy:test": "DEPLOY_ENV=test node ./src/scripts/deploy.js",
-    "deploy:prod": "DEPLOY_ENV=prod node ./src/scripts/deploy.js"
+    "deploy:prod": "DEPLOY_ENV=prod node ./src/scripts/deploy.js",
+    "webp": "node ./src/scripts/webpConverter.js --subdir --deleteOriginal=true --quality=50"
   },
   "dependencies": {
     "@eslint/js": "^9.21.0",
@@ -21,6 +22,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "basic-ftp": "^5.0.5",
     "classnames": "^2.5.1",
+    "cwebp": "^3.2.0",
     "dotenv": "^16.5.0",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.1.1",
